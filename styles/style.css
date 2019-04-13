@@ -1,0 +1,36 @@
+.close{
+    font-size: 2.5em;
+    font-weight: 100 !important;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    color: #484848;
+}
+h5{
+    font-family: 'Roboto', sans-serif;
+    color: #484848;
+    font-size: 16pt;
+}
+h6{
+    font-size: 10pt;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #484848;
+}
+h3{
+    font-size: 20pt;
+    margin: 15px 0 ;
+    font-family: 'Roboto', sans-serif;
+    color: #484848;
+}
+.checkin{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #484848;
+}
+.row{
+    margin-bottom: 0px;
+}
+a{
+    color: #4c9599;
+}
