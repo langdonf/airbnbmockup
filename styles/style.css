@@ -92,12 +92,18 @@ a i {
     border-radius: 15px;
     display: flex;
     align-items: center;
+    height: 50px;
 }
 
 .slide-container-msg {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    font-size: 8pt;
+}
+
+.slide-btn-msg {
+    font-size: 48pt;
 }
 
 .slide-btn {
@@ -105,12 +111,11 @@ a i {
     height: 50px;
     border-radius: 12.5px;
     display: flex;
-    position: relative;
+    position: absolute;
     align-items: center;
     justify-content: center;
     border: 2px solid #484848;
     background-color: white;
-    align-self: flex-start;
 }
 
 .close-btn {
