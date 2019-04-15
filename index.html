@@ -12,8 +12,8 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="/styles/materialize.min.css" media="screen,projection" />
-    <link rel="stylesheet" type="text/css" media="screen" href="/styles/style.css">
+    <link type="text/css" rel="stylesheet" href="./styles/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/style.css">
 
 </head>
 <body>
@@ -25,7 +25,6 @@
             <div class="col s8 center">
                 <h5>Your Home Reservation</h5>
             </div>
-
 
             <div class="col s2"></div>
         </div>
@@ -45,24 +44,18 @@
         <div class="divider"></div>
         <div class="row">
             <div class="col s6">
-
                 <ul>
                     <li class="checkin">Check-in</li>
                     <li>4:00 PM</li>
                     <li>Mon, Aug 20</li>
                 </ul>
-
-
             </div>
             <div class="col s6 right">
-
                 <ul class="right">
                     <li class="checkin">Check-out</li>
                     <li>11:00 AM</li>
                     <li>Mon, Aug 24</li>
                 </ul>
-
-
             </div>
 
         </div>
@@ -112,7 +105,9 @@
                 <h6>House Key</h6>
                 <p>Unlock and lock the door using your phone.
                 </p>
-                <a class="waves-effect waves-teal btn-flat">Key to the house</a>
+                <a href="#modal_keylock" class="waves-effect waves-teal btn-flat modal-trigger">
+                    Key to the house
+                </a>
             </div>
         </div>
         <div class="divider"></div>
@@ -210,13 +205,32 @@
         </div>
         <div style="height:100px"></div>
 
+        <!-- Modal Structure -->
+        <div id="modal_keylock" class="modal">
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <h5 class="close-btn modal-action modal-close"> 
+                        &times; 
+                    </h5>
+                    <h6 class="modal-header-title">Your house key</h6>    
+                </div>
+            
+                <div class="slide-btn-container">
+                    
+                    <div class="slide-btn">
+                        <p> Lock </p>
+                    </div>
+                    <p class="slide-container-msg"> Slide to unlock</p>
+                </div>
+            </div>
+        </div>
 
     </div>
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="/scripts/app.js"></script>
-    <script type="text/javascript" src="/scripts/materialize.min.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script type="text/javascript" src="./scripts/materialize.min.js"></script>
 </body>
 
 </html>
