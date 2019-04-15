@@ -2,6 +2,7 @@ function sliderAnimation(event) {
   
   // check the slider button horizontal position
   if ($(event.target).position().left <  0.5*$('.slide-btn-container').width()) {
+    
     // animate the button to slide to right
     $('.slide-btn').attr('src', 'images/locked.png')
       .css({'right': '0px', 'left': ''});
@@ -32,4 +33,5 @@ $(document).ready(function(){
       sliderAnimation(event);
     }
   });
+  
 });
