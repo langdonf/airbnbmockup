@@ -79,21 +79,20 @@ a i {
 
 #modal_keylock {
     width: 315px !important; 
-    
-    transform: translateY(50%) !important;
+    transform: translateY(60%) !important;
+}
+
+.close-btn {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    margin: 1px;
+    padding: 1px;
 }
 
 .modal-content {
     position: relative;
     text-align: center;
-}
-
-.close-btn {
-    position: absolute;
-    left: 5px;
-    top: 5px;
-    margin: 1px;
-    padding: 1px;
 }
 
 .modal-header-title {
@@ -102,11 +101,11 @@ a i {
 }
 
 .slide-btn-container {
-    margin: 30px auto;
-    border: 2.5px solid #4c9599;
-    border-radius: 15px;
     display: flex;
     align-items: center;
+    margin: 35px auto;
+    border: 3px solid #4c9599;
+    border-radius: 15px;
     height: 57px;
     width: 250px;
     position: relative;
@@ -119,26 +118,15 @@ a i {
     font-size: 8pt;
 }
 
-.slide-btn-msg {
-    font-size: 48pt;
-}
-
 .slide-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
     width: 55px;
     height: 50px;
     border-radius: 12.5px;
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    /* border: 5px solid #a7a7a7; */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 4px 8px 0 rgba(0, 0, 0, 0.25);
     background-color: white;
-}
-
-.close-btn {
-    position: absolute;
-    top: 0;
-    left: 5px;
 }
