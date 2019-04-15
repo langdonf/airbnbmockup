@@ -6,4 +6,4 @@ This is a mockup designed to show how a remote key unlock feature might work for
 ## Contributing
 Designed by Winnie Huang
 
-Code by Landon Froker and Clarence Cheung
+Code by Landon Froker and (Clarence Cheung)[https://github.com/kleranscoding]
