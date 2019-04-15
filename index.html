@@ -207,20 +207,17 @@
 
         <!-- Modal Structure -->
         <div id="modal_keylock" class="modal">
-            <div class="modal-content"> 
+            <div class="modal-content">
+                <div class="close-btn">
+                    <h5 class="close modal-action modal-close"> &times; </h5>
+                </div>
                 <div class="modal-header">
-                    <h5 class="close-btn modal-action modal-close"> 
-                        &times; 
-                    </h5>
-                    <h6 class="modal-header-title">Your house key</h6>    
+                    <h5 class="modal-header-title">Your house key</h5>    
                 </div>
             
                 <div class="slide-btn-container">
-                    
-                    <div class="slide-btn">
-                        <p> Lock </p>
-                    </div>
-                    <p class="slide-container-msg"> Slide to unlock</p>
+                    <img class="slide-btn" src="images/unlocked.png"/>
+                    <h6 class="slide-container-msg"> slide to unlock door </h6>
                 </div>
             </div>
         </div>
@@ -231,6 +228,7 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="./scripts/app.js"></script>
     <script type="text/javascript" src="./scripts/materialize.min.js"></script>
+    <script type="text/javascript" src="./scripts/jquery.touchSwipe.min.js"></script>
 </body>
 
 </html>

@@ -20,7 +20,8 @@ h6{
 .stickydiv{
     position: sticky;
     top: 0;
-    background-color: white
+    background-color: white;
+    z-index: 1000;
 
 }
 .divider{
@@ -76,6 +77,19 @@ a i {
 
 /* modal keylock */
 
+#modal_keylock {
+    width: 315px !important; 
+    transform: translateY(50%) !important;
+}
+
+.close-btn {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    margin: 1px;
+    padding: 1px;
+}
+
 .modal-content {
     position: relative;
     text-align: center;
@@ -87,35 +101,34 @@ a i {
 }
 
 .slide-btn-container {
-    margin: 30px 0;
-    border: 2.5px solid #4c9599;
-    border-radius: 15px;
     display: flex;
     align-items: center;
+    margin: 35px auto;
+    border: 3px solid #4c9599;
+    border-radius: 15px;
+    height: 57px;
+    width: 250px;
+    position: relative;
 }
 
 .slide-container-msg {
     position: absolute;
     left: 50%;
-    bottom:33%;
     transform: translateX(-50%);
+    font-size: 8pt;
+    top: 25%;
+    bottom: 25%;
 }
 
 .slide-btn {
-    width: 50px;
-    height: 50px;
-    border-radius: 12.5px;
     display: flex;
-    position: relative;
     align-items: center;
     justify-content: center;
-    border: 2px solid #484848;
-    background-color: white;
-    align-self: flex-start;
-}
-
-.close-btn {
     position: absolute;
     top: 0;
-    left: 15px;
+    width: 55px;
+    height: 50px;
+    border-radius: 12.5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    background-color: white;
 }

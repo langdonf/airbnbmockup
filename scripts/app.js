@@ -1,39 +1,41 @@
-function sliderAnimation(event) {
-    var containerWidth = $('.slide-btn-container').width();
-    console.log($(event.target).position().left);
+(function ($) {
+
+  function sliderAnimation(event) {
     
-    if ($(event.target).position().left < containerWidth/2.0) {
+    // check the slider button horizontal position
+    if ($(event.target).position().left <  0.5*$('.slide-btn-container').width()) {
       
+      // animate the button to slide to right
+      $('.slide-btn').attr('src', 'images/locked.png')
+        .css({'right': '0px', 'left': ''});
+      
+      // change background-color
+      $('.slide-btn-container').css( 'backgroundColor', 'rgba(76,149,153,0.2)');
+      
+      // change message
       $('.slide-container-msg').html($('.slide-container-msg').html().replace('unlock','lock'));
-      $('.slide-btn').animate({
-        'left': parseFloat(containerWidth-$(event.target).width()-2)+'px' 
-      });
-      console.log($(event.target).position());
-      $('.slide-btn-container').css(
-        'backgroundColor', 'rgba(76,149,153,0.2)'
-      );
-      
-  
+      $('.slide-btn-msg').css('color', '#4c9599');
+
     } else {
       
+      $('.slide-btn').attr('src', 'images/unlocked.png')
+        .css({'left': '0px', 'right': ''});
+      $('.slide-btn-container').css('backgroundColor', 'white');
       $('.slide-container-msg').html($('.slide-container-msg').html().replace('lock','unlock'));
-      $('.slide-btn').animate({
-        'left': '-3px' 
-      });
-      $('.slide-btn-container').css(
-        'backgroundColor', 'white'
-      );
-      
-      console.log($(event.target).position());
+      $('.slide-btn-msg').css('color', '#484848');
     }
     
   }
-  
+
   $(document).ready(function(){
-  
+
     $('.modal').modal();
-  
-    $('.slide-btn').click(function(event) {
-      sliderAnimation(event);
+
+    $('.slide-btn').swipe({'swipe': function(event) {
+        sliderAnimation(event);
+      }
     });
+    
   });
+
+})(jQuery);
