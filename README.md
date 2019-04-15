@@ -8,5 +8,5 @@ Designed by Winnie Huang
 
 Code by [Landon Froker](https://github.com/langdonf/) and [Clarence Cheung](https://github.com/kleranscoding)
 
-##Acknowledgements 
+## Acknowledgements
 Thanks to [TouchSwipe](https://github.com/mattbryson/TouchSwipe-Jquery-Plugin), a jQuery plugin. 
