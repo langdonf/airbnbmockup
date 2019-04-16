@@ -100,7 +100,7 @@ a i {
     color: #484848;
 }
 .modal-overlay{
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .slide-btn-container {
