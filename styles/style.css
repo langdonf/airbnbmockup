@@ -99,6 +99,9 @@ a i {
     font-size: 16pt;
     color: #484848;
 }
+.modal-overlay{
+    overflow: hidden;
+}
 
 .slide-btn-container {
     display: flex;
