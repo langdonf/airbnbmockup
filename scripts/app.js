@@ -1,5 +1,13 @@
 (function ($) {
 
+  function isMobile() {
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   function sliderAnimation(event) {
     
     // check the slider button horizontal position
@@ -29,12 +37,18 @@
 
   $(document).ready(function(){
 
-    $('.modal').modal();
+    $('#modal_keylock').modal();
 
-    $('.slide-btn').swipe({'swipe': function(event) {
+    if (isMobile()) {
+      $('.slide-btn').swipe({'swipe': function(event) {
+          sliderAnimation(event);
+        }
+      });
+    } else {
+      $('.slide-btn').click(function(event) {
         sliderAnimation(event);
-      }
-    });
+      });
+    }
     
   });
 
